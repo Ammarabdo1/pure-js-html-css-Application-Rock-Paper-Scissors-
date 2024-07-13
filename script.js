@@ -9,8 +9,8 @@
     👉 Event Listeners
     👉 Higher order Function (Math.random())
 */
-const score = document.querySelector('#score')
-
+const yourScore = document.querySelector("#score")
+// score.innerText = ''
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
 // getComputerChoice() 👉 'Rock'
 // getComputerChoice() 👉 'Scissors'
@@ -70,7 +70,7 @@ const player_score = document.getElementById('player_score')
 function showResult(UserChoice, ComputerChoice) {
   let score = getResult(UserChoice , ComputerChoice)
   player_score.innerText = Number(player_score.innerText) + score
-  score.innerText= 'score💯 : '
+  yourScore.innerText= 'score💯 : '
   if(score === 1){
     result.innerText = 'You Win!'
   }else if(score === -1){
@@ -118,7 +118,7 @@ function endGame() {
     result.innerText = ''
     hands.innerText= ''
     player_score.innerText= ''
-  score.innerText= ''
+    yourScore.innerText = ''
 }
 }
 endGame()
