@@ -72,11 +72,11 @@ function showResult(UserChoice, ComputerChoice) {
   player_score.innerText = Number(player_score.innerText) + score
   yourScore.innerText= 'score💯 : '
   if(score === 1){
-    result.innerText = 'You Win!'
+    result.innerText = 'You Win🏆'
   }else if(score === -1){
-    result.innerText = 'You Lose!'
+    result.innerText = 'You Lose💢'
   }else if(score === 0){
-    result.innerText = 'It\'s a Draw!'
+    result.innerText = 'It\'s a Draw🎯'
   }
   // Hint: on a score of -1
   // You should do result.innerText = 'You Lose!'
@@ -88,7 +88,7 @@ const hands = document.getElementById('hands')
 function onClickRPS(value) {
   const ComputerChoice =  getComputerChoice(Chose)
   const UserChoice = value
-  hands.innerText = `🧑 ${UserChoice} vs 🤖 ${ComputerChoice} `
+  hands.innerText = `🧑 ${UserChoice} vs 🤖 ${ComputerChoice} ⚔`
   showResult(UserChoice, ComputerChoice)
 
 }
