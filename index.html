@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>replit</title>
+  <title>Game</title>
   <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,10 @@
     <button class="rpsButton" value="Scissors" onclick="onClickRPS('Scissors')">✌</button>
   </div>
   <div class="resultContainer">
-  <div id="player_score">0</div>
+    <div>
+      <strong id="score"></strong>
+      <span id="player_score"></span>
+    </div>
   <div id="hands"></div>
   <div id="result"></div>
   <button id='endGameButton'>🔴</button>
